@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="js/plotxml.js"></script>
+<link rel="stylesheet" href="css/plotxml.css"></link>
+</head>
+<body>
+<div class="plotxml-fig2">
+ <div class="plotxml-line">
+  <div class="plotxml-para" data-name="x" data-type="numarray" data-ref="#xdata"></div>
+  <div class="plotxml-para" data-name="y" data-type="numarray" data-ref="#ydata"></div>
+  <div class="plotxml-para" data-name="type">scatter</div>
+  <div class="plotxml-para" data-name="name">sample curve</div>
+ </div> 
+ <div class="plotxml-para" data-type="json">{"title":"My Figure"}</div> 
+ <div class="plotxml-para" data-name="xaxis" data-type="json">{"title":"x title"}</div>
+ <div class="plotxml-para" data-name="yaxis" data-type="json">{"title":"y title"}</div>
+ <div class="plotxml-canvas"></div>
+</div>
+<div>
+x = <p id='xdata'>
+1  2  3.5    4    0.5e1
+</p>
+y = <p id='ydata'>
+6 7 8 7 8
+</p>
+</div>
+
+</body>
+<script>
+  plotxml.plot();
+</script>
+</html>
